@@ -1,0 +1,71 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+#main-chat-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  transition: 1s ease;
+  z-index: 1000000000;
+}
+
+#main-chat-button:hover {
+  background-color: #2980b9;
+}
+
+.chat-icon-container {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 100px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease;
+  z-index: 50000000;
+}
+
+.chat-icon {
+  margin-top: 10px;
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  margin-right: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-icon:hover {
+  background-color: #2980b9;
+}
+
+#hs-web-interactives-top-anchor {
+  display: none;
+}
+
+#hubspot-messages-iframe-container.widget-align-right {
+  bottom: 10px!important;
+}

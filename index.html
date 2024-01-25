@@ -1,0 +1,110 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="email.css" />
+    <link rel="stylesheet" href="whatsapp.css" />
+    <link rel="stylesheet" href="hubspot.css" />
+  </head>
+  <body>
+    <!--Hubspot Chat widget starts-->
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      defer
+      src="//js-na1.hs-scripts.com/44257520.js"
+    ></script>
+
+    <button id="main-chat-button" onclick="toggleChatIcons()">
+      <i class="fa fa-comment-alt"></i>
+    </button>
+
+    <div class="chat-icon-container" id="chat-icons">
+      <button
+        class="chat-icon"
+        id="chat-icon1"
+        onclick="toggleIndividualChat1()"
+      >
+        <i class="fab fa-hubspot"></i>
+      </button>
+      <button
+        class="chat-icon"
+        id="chat-icon2"
+        onclick="toggleIndividualChat2()"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </button>
+      <button
+        class="chat-icon"
+        id="chat-icon3"
+        onclick="toggleIndividualChat3()"
+      >
+      <i class='fa fa-envelope'></i>
+      </button>
+    </div>
+
+    <!--Hubspot chat widget ends-->
+
+    <!--Whatsapp chat widget Start--->
+    <div id="chat-box">
+      <div id="chat-top">
+        Need HELP?
+       
+        <div class="clear"></div>
+      </div>
+      <div id="chat-msg">
+        <p>We Are expert in Hubspot</p>
+        <div id="chat-form">
+          <div class="chat-in">
+            <input
+              type="text"
+              id="whats-in"
+              placeholder="Send Your Message..."
+            />
+          </div>
+          <div id="send-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="38"
+              height="38"
+              viewBox="0 0 48 48"
+            >
+              <path
+                d="M4.02 42L46 24 4.02 6 4 20l30 4-30 4z"
+                fill="rgb(18, 140, 126)"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="whats-chat">
+     
+    </div>
+
+    <!--Whatsapp chat widget ends-->
+
+    <!--Email chat Widget starts-->
+    <div id="chat-widget">
+      <label for="email-input">Email:</label>
+      <input
+        type="email"
+        value="bishal1831047@gmail.com"
+        id="email-input"
+        placeholder="Enter your email"
+      />
+      <button id="send-button" onclick="openEmailClient()">Start Chat</button>
+    </div>
+
+    <script src="email.js"></script>
+    <script src="hubspot.js"></script>
+    <script src="whatsapp.js"></script>
+  </body>
+</html>
